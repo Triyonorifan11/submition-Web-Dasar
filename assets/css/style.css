@@ -1,0 +1,237 @@
+*,
+body {
+    padding: 0;
+    margin: 0;
+
+    font-family: "Apple Color Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.dark {
+    background-color: #333;
+    color: white;
+}
+
+.nav-dark {
+    background-color: rgb(80, 80, 80) !important;
+    color: white;
+}
+
+.toggle-dark {
+    color: white;
+    cursor: pointer;
+}
+
+.dropdown-item-dark {
+    background-color: rgb(59, 59, 59) !important;
+}
+
+.dropdown-item-dark li:hover {
+    background-color: rgb(51, 51, 51) !important;
+}
+
+
+
+.container {
+    padding: 0 7%;
+}
+
+.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.center {
+    text-align: center;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: 10% 2rem;
+}
+
+.center h1 {
+    font-size: 3rem;
+}
+
+
+nav {
+    background-color: #2893ff;
+    z-index: 999;
+}
+
+.navbar-link {
+    padding: 1.3rem 0 !important;
+}
+
+li.dropdown-me {
+    display: inline-block;
+}
+
+.dropdown-me:hover .dropdown-item {
+    display: block;
+}
+
+.dropdown-item li:hover {
+    background-color: #65aff8;
+    border-radius: 3px;
+}
+
+.dropdown-item li {
+    padding: 5px;
+}
+
+.dropdown-item {
+    list-style-type: none;
+    position: absolute;
+    background-color: #82c0ff;
+    width: 100px;
+    text-align: center;
+    line-height: 2rem;
+    display: none;
+    border-radius: 3px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+hr {
+    margin: 2rem 0;
+    border: 1px solid inherit;
+}
+
+.form-checked {
+    border: 3px solid rgba(0, 0, 0, 0.2);
+    padding: 3px;
+}
+
+.shadow {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+nav a {
+    font-size: 16px;
+    text-decoration: none;
+    color: #fff;
+}
+
+nav .nav-item {
+    display: inline-block;
+    list-style-type: none;
+    margin-right: 20px;
+
+}
+
+.jumbotron {
+    margin-top: 2rem;
+    background-color: rgba(0, 0, 0, 0.2);
+    position: relative;
+    color: white;
+
+}
+
+.thumbnail {
+    margin-right: 10px;
+    width: 1900px;
+}
+
+.img-thumb {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    max-height: 400px;
+}
+
+.b-card {
+    text-align: justify;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.featured-image {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 1rem;
+    margin: 2rem 0;
+
+}
+
+#content {
+    float: left;
+    width: 75%;
+}
+
+main {
+    overflow: auto;
+}
+
+aside {
+    float: right;
+    width: 25%;
+    padding-left: 20px;
+}
+
+.profile header {
+    text-align: center;
+}
+
+.profile img {
+    margin-top: 0.4rem;
+    width: 200px;
+}
+
+footer {
+    padding: 20px;
+    color: white;
+    background-color: #2893ff;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 1199.98px) {
+
+    #content,
+    aside {
+        width: 100%;
+        padding: 0;
+    }
+
+    .dropdown-me::after .dropdown-item {
+        display: block;
+    }
+
+    .thumbnail {
+        width: 100%;
+    }
+
+    .center h1 {
+        font-size: 1.5rem;
+    }
+
+    .d-sm-block {
+        display: block;
+    }
+}
